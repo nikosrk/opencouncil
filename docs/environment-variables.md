@@ -56,6 +56,7 @@ const dbUrl = env.DATABASE_URL; // This is guaranteed to be a string.
 ### Authentication
 | Variable | Description | Required | Default |
 |----------|-------------|----------|---------|
+| `RESEND_FROM` | The "from" address for Resend emails. Use a test domain (e.g., resend.dev) for local development. | Yes | - |
 | `RESEND_API_KEY` | API key for Resend email service. | Yes | - |
 | `BASIC_AUTH_USERNAME` | Username for basic auth protection. | No | - |
 | `BASIC_AUTH_PASSWORD` | Password for basic auth protection. | No | - |

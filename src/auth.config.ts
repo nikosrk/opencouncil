@@ -7,7 +7,7 @@ import { env } from "./env.mjs"
 export default {
     trustHost: true,
     providers: [Resend({
-        from: 'OpenCouncil <auth@opencouncil.gr>',
+        from: env.RESEND_FROM,
         apiKey: env.RESEND_API_KEY,
         sendVerificationRequest: async (params) => {
             const { identifier: to, provider, url, theme } = params

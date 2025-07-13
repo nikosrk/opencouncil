@@ -16,6 +16,7 @@ export const env = createEnv({
     DATABASE_NAME: z.string().optional(),
 
     // Auth
+    RESEND_FROM: z.string().min(1),
     RESEND_API_KEY: z.string().min(1),
     NEXTAUTH_SECRET: z.string().min(1),
     BASIC_AUTH_USERNAME: z.string().optional(),
@@ -76,6 +77,7 @@ export const env = createEnv({
     DATABASE_USER: process.env.DATABASE_USER,
     DATABASE_PASSWORD: process.env.DATABASE_PASSWORD,
     DATABASE_NAME: process.env.DATABASE_NAME,
+    RESEND_FROM: process.env.RESEND_FROM,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
     NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
     BASIC_AUTH_USERNAME: process.env.BASIC_AUTH_USERNAME,
